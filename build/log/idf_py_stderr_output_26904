@@ -1,0 +1,377 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_init[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce7: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cdd: [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m183[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce7: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000258d: [0;33m__adddf3_aux[0m[0m in [0;32mROM[0m
+[0m--- 0x400da7f9: [0;33mcvt[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1870[0m
+[0m--- (inlined by) [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1307[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000bfed: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x40086616: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m514[0m
+[0m--- 0x40085ed3: [0;33mxQueueGenericSend[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1056[0m
+[0m--- 0x40085fc6: [0;33mxQueueGiveMutexRecursive[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m789[0m
+[0m--- 0x4008276f: [0;33mlock_release_generic[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/newlib/locks.c[0m[0m:[1;31m190[0m
+[0m--- 0x40082841: [0;33m_lock_release_recursive[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/newlib/locks.c[0m[0m:[1;31m202[0m
+[0m--- 0x400d5519: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m240[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cdd: [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m183[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce5: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce0: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce0: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cef: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cf5: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce5: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cdd: [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m183[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce0: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cdd: [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m183[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce5: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cec: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4ce5: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d70e3: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m441[0m
+[0m--- 0x400d74a8: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m515[0m
+[0m--- 0x40082f81: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d4cef: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/hal/esp32/include/hal/uart_ll.h[0m[0m:[1;31m414[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m185[0m
+[0m--- 0x400d5507: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_uart.c[0m[0m:[1;31m238[0m
+[0m--- 0x400d4263: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs_console.c[0m[0m:[1;31m86[0m
+[0m--- 0x400d3dd6: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/vfs/vfs.c[0m[0m:[1;31m482[0m
+[0m--- 0x4000bd83: [0;33m_write_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4000117d: [0;33m__swrite[0m[0m in [0;32mROM[0m
+[0m--- 0x400592fe: [0;33m__sflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x4005937a: [0;33m_fflush_r[0m[0m in [0;32mROM[0m
+[0m--- 0x400d8f6d: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x400dc92f: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x400dc805: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x400d8fc3: [0;33mprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c[0m[0m:[1;31m56[0m
+[0m--- 0x400d5684: [0;33mapp_main[0m[0m at [0;32mC:/Users/navan/Documents/Home/SeriousStuff/baremetal/main/main.c[0m[0m:[1;31m88[0m
+[0m--- 0x400defc0: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x400862b5: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.2.6/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m

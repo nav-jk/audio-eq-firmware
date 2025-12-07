@@ -1,0 +1,159 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec  4 2025 09:12:12[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f4f4h (128244) map[0m
+[0;32mI (148) esp_image: segment 1: paddr=0002f51c vaddr=3ffb0000 size=00afch (  2812) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=0f814h ( 63508) map[0m
+[0;32mI (176) esp_image: segment 3: paddr=0003f83c vaddr=3ffb0afc size=01774h (  6004) load[0m
+[0;32mI (178) esp_image: segment 4: paddr=00040fb8 vaddr=40080000 size=0c738h ( 51000) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (229) cpu_start: Pro cpu start user code[0m
+[0;32mI (229) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (229) cpu_start: Application information:[0m
+[0;32mI (232) cpu_start: Project name:     bare-metal-demo[0m
+[0;32mI (238) cpu_start: App version:      1[0m
+[0;32mI (242) cpu_start: Compile time:     Dec  4 2025 09:10:56[0m
+[0;32mI (248) cpu_start: ELF file SHA256:  7bc086e34...[0m
+[0;32mI (254) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFC8B58 len 000174A8 (93 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008C738 len 000138C8 (78 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (344) EQ_OFFLINE: Starting 3-band EQ over 22529 samples[0m
+[0;32mI (344) EQ_OFFLINE: n=   0  x=-0.0316  low=-0.0315  mid=-0.0316  high=-0.0289  y=-0.0920[0m
+[0;32mI (354) EQ_OFFLINE: n=   1  x=+0.0658  low=+0.0658  mid=+0.0658  high=+0.0614  y=+0.1929[0m
+[0;32mI (364) EQ_OFFLINE: n=   2  x=+0.0143  low=+0.0139  mid=+0.0143  high=+0.0065  y=+0.0347[0m
+[0;32mI (374) EQ_OFFLINE: n=   3  x=-0.0114  low=-0.0117  mid=-0.0114  high=-0.0052  y=-0.0283[0m
+[0;32mI (374) EQ_OFFLINE: n=   4  x=+0.0844  low=+0.0838  mid=+0.0844  high=+0.0868  y=+0.2550[0m
+[0;32mI (384) EQ_OFFLINE: n=   5  x=+0.0406  low=+0.0395  mid=+0.0406  high=+0.0328  y=+0.1128[0m
+[0;32mI (394) EQ_OFFLINE: n=   6  x=-0.0377  low=-0.0388  mid=-0.0377  high=-0.0326  y=-0.1092[0m
+[0;32mI (404) EQ_OFFLINE: n=   7  x=-0.0559  low=-0.0566  mid=-0.0559  high=-0.0398  y=-0.1524[0m
+[0;32mI (414) EQ_OFFLINE: n=   8  x=-0.0238  low=-0.0242  mid=-0.0238  high=-0.0216  y=-0.0696[0m
+[0;32mI (424) EQ_OFFLINE: n=   9  x=-0.0711  low=-0.0711  mid=-0.0711  high=-0.0804  y=-0.2227[0m
+[0;32mI (434) EQ_OFFLINE: n=  10  x=-0.0532  low=-0.0527  mid=-0.0532  high=-0.0564  y=-0.1623[0m
+[0;32mI (444) EQ_OFFLINE: n=  11  x=+0.0326  low=+0.0332  mid=+0.0326  high=+0.0290  y=+0.0947[0m
+[0;32mI (444) EQ_OFFLINE: n=  12  x=-0.0363  low=-0.0357  mid=-0.0363  high=-0.0370  y=-0.1089[0m
+[0;32mI (454) EQ_OFFLINE: n=  13  x=-0.0190  low=-0.0182  mid=-0.0190  high=-0.0123  y=-0.0495[0m
+[0;32mI (464) EQ_OFFLINE: n=  14  x=+0.0353  low=+0.0360  mid=+0.0353  high=+0.0327  y=+0.1041[0m
+[0;32mI (474) EQ_OFFLINE: n=  15  x=+0.0143  low=+0.0148  mid=+0.0143  high=+0.0055  y=+0.0346[0m
+[0;32mI (484) EQ_OFFLINE: n=  16  x=+0.0338  low=+0.0341  mid=+0.0338  high=+0.0319  y=+0.0997[0m
+[0;32mI (494) EQ_OFFLINE: n=  17  x=+0.0325  low=+0.0326  mid=+0.0325  high=+0.0364  y=+0.1015[0m
+[0;32mI (504) EQ_OFFLINE: n=  18  x=+0.0179  low=+0.0178  mid=+0.0179  high=+0.0224  y=+0.0581[0m
+[0;32mI (514) EQ_OFFLINE: n=  19  x=+0.0389  low=+0.0385  mid=+0.0389  high=+0.0375  y=+0.1150[0m
+[0;32mI (514) EQ_OFFLINE: n=  20  x=+0.0488  low=+0.0481  mid=+0.0488  high=+0.0424  y=+0.1394[0m
+[0;32mI (524) EQ_OFFLINE: n=  21  x=+0.0022  low=+0.0013  mid=+0.0022  high=+0.0034  y=+0.0069[0m
+[0;32mI (534) EQ_OFFLINE: n=  22  x=-0.0261  low=-0.0269  mid=-0.0261  high=-0.0146  y=-0.0677[0m
+[0;32mI (544) EQ_OFFLINE: n=  23  x=-0.0084  low=-0.0090  mid=-0.0084  high=-0.0032  y=-0.0206[0m
+[0;32mI (554) EQ_OFFLINE: n=  24  x=-0.0247  low=-0.0252  mid=-0.0247  high=-0.0308  y=-0.0806[0m
+[0;32mI (564) EQ_OFFLINE: n=  25  x=-0.0398  low=-0.0400  mid=-0.0398  high=-0.0435  y=-0.1233[0m
+[0;32mI (574) EQ_OFFLINE: n=  26  x=+0.0183  low=+0.0182  mid=+0.0183  high=+0.0174  y=+0.0539[0m
+[0;32mI (584) EQ_OFFLINE: n=  27  x=+0.0425  low=+0.0421  mid=+0.0425  high=+0.0378  y=+0.1223[0m
+[0;32mI (584) EQ_OFFLINE: n=  28  x=-0.0093  low=-0.0098  mid=-0.0093  high=-0.0084  y=-0.0274[0m
+[0;32mI (594) EQ_OFFLINE: n=  29  x=-0.0544  low=-0.0547  mid=-0.0544  high=-0.0424  y=-0.1516[0m
+[0;32mI (604) EQ_OFFLINE: n=  30  x=-0.0409  low=-0.0408  mid=-0.0409  high=-0.0335  y=-0.1152[0m
+[0;32mI (614) EQ_OFFLINE: n=  31  x=+0.0573  low=+0.0573  mid=+0.0573  high=+0.0425  y=+0.1571[0m
+[0;32mI (624) EQ_OFFLINE: n=  32  x=+0.0311  low=+0.0308  mid=+0.0311  high=+0.0131  y=+0.0750[0m
+[0;32mI (634) EQ_OFFLINE: n=  33  x=-0.0894  low=-0.0895  mid=-0.0894  high=-0.0743  y=-0.2532[0m
+[0;32mI (644) EQ_OFFLINE: n=  34  x=-0.0080  low=-0.0077  mid=-0.0080  high=+0.0149  y=-0.0007[0m
+[0;32mI (654) EQ_OFFLINE: n=  35  x=+0.0663  low=+0.0664  mid=+0.0663  high=+0.0525  y=+0.1852[0m
+[0;32mI (654) EQ_OFFLINE: n=  36  x=-0.0227  low=-0.0228  mid=-0.0227  high=-0.0440  y=-0.0895[0m
+[0;32mI (664) EQ_OFFLINE: n=  37  x=-0.0072  low=-0.0071  mid=-0.0072  high=-0.0005  y=-0.0148[0m
+[0;32mI (674) EQ_OFFLINE: n=  38  x=+0.0107  low=+0.0108  mid=+0.0107  high=+0.0262  y=+0.0477[0m
+[0;32mI (684) EQ_OFFLINE: n=  39  x=-0.0427  low=-0.0425  mid=-0.0427  high=-0.0376  y=-0.1228[0m
+[0;32mI (694) EQ_OFFLINE: n=  40  x=+0.0180  low=+0.0182  mid=+0.0180  high=+0.0085  y=+0.0447[0m
+[0;32mI (704) EQ_OFFLINE: n=  41  x=-0.0031  low=-0.0029  mid=-0.0031  high=-0.0143  y=-0.0203[0m
+[0;32mI (714) EQ_OFFLINE: n=  42  x=-0.0222  low=-0.0219  mid=-0.0222  high=-0.0170  y=-0.0610[0m
+[0;32mI (724) EQ_OFFLINE: n=  43  x=+0.0532  low=+0.0534  mid=+0.0532  high=+0.0588  y=+0.1654[0m
+[0;32mI (724) EQ_OFFLINE: n=  44  x=-0.0089  low=-0.0089  mid=-0.0089  high=-0.0113  y=-0.0290[0m
+[0;32mI (734) EQ_OFFLINE: n=  45  x=-0.0553  low=-0.0551  mid=-0.0553  high=-0.0512  y=-0.1616[0m
+[0;32mI (744) EQ_OFFLINE: n=  46  x=-0.0110  low=-0.0105  mid=-0.0110  high=-0.0072  y=-0.0287[0m
+[0;32mI (754) EQ_OFFLINE: n=  47  x=+0.0305  low=+0.0309  mid=+0.0305  high=+0.0218  y=+0.0832[0m
+[0;32mI (764) EQ_OFFLINE: n=  48  x=+0.0201  low=+0.0203  mid=+0.0201  high=+0.0109  y=+0.0513[0m
+[0;32mI (774) EQ_OFFLINE: n=  49  x=+0.0129  low=+0.0130  mid=+0.0129  high=+0.0165  y=+0.0423[0m
+[0;32mI (784) EQ_OFFLINE: n=  50  x=+0.0753  low=+0.0751  mid=+0.0753  high=+0.0788  y=+0.2292[0m
+[0;32mI (794) EQ_OFFLINE: n=  51  x=+0.0667  low=+0.0659  mid=+0.0667  high=+0.0611  y=+0.1937[0m
+[0;32mI (794) EQ_OFFLINE: n=  52  x=+0.0029  low=+0.0019  mid=+0.0029  high=+0.0041  y=+0.0089[0m
+[0;32mI (804) EQ_OFFLINE: n=  53  x=-0.0040  low=-0.0050  mid=-0.0040  high=+0.0066  y=-0.0024[0m
+[0;32mI (814) EQ_OFFLINE: n=  54  x=-0.0211  low=-0.0221  mid=-0.0211  high=-0.0153  y=-0.0585[0m
+[0;32mI (824) EQ_OFFLINE: n=  55  x=-0.0864  low=-0.0869  mid=-0.0864  high=-0.0843  y=-0.2575[0m
+[0;32mI (834) EQ_OFFLINE: n=  56  x=-0.0663  low=-0.0662  mid=-0.0663  high=-0.0658  y=-0.1982[0m
+[0;32mI (844) EQ_OFFLINE: n=  57  x=-0.0040  low=-0.0036  mid=-0.0040  high=-0.0122  y=-0.0199[0m
+[0;32mI (854) EQ_OFFLINE: n=  58  x=+0.0255  low=+0.0258  mid=+0.0255  high=+0.0137  y=+0.0651[0m
+[0;32mI (864) EQ_OFFLINE: n=  59  x=+0.0130  low=+0.0132  mid=+0.0130  high=+0.0122  y=+0.0384[0m
+[0;32mI (864) EQ_OFFLINE: n=  60  x=-0.0604  low=-0.0600  mid=-0.0604  high=-0.0449  y=-0.1654[0m
+[0;32mI (874) EQ_OFFLINE: n=  61  x=-0.0234  low=-0.0228  mid=-0.0234  high=-0.0129  y=-0.0592[0m
+[0;32mI (884) EQ_OFFLINE: n=  62  x=+0.0524  low=+0.0529  mid=+0.0524  high=+0.0364  y=+0.1418[0m
+[0;32mI (894) EQ_OFFLINE: n=  63  x=+0.0350  low=+0.0351  mid=+0.0350  high=+0.0154  y=+0.0855[0m
+[0;32mI (904) EQ_OFFLINE: n=  64  x=+0.0584  low=+0.0582  mid=+0.0584  high=+0.0606  y=+0.1772[0m
+[0;32mI (914) EQ_OFFLINE: n=  65  x=+0.1172  low=+0.1163  mid=+0.1172  high=+0.1253  y=+0.3588[0m
+[0;32mI (924) EQ_OFFLINE: n=  66  x=+0.0064  low=+0.0051  mid=+0.0064  high=+0.0128  y=+0.0243[0m
+[0;32mI (934) EQ_OFFLINE: n=  67  x=-0.0924  low=-0.0934  mid=-0.0924  high=-0.0776  y=-0.2634[0m
+[0;32mI (944) EQ_OFFLINE: n=  68  x=-0.0098  low=-0.0103  mid=-0.0098  high=-0.0064  y=-0.0265[0m
+[0;32mI (944) EQ_OFFLINE: n=  69  x=-0.0540  low=-0.0543  mid=-0.0540  high=-0.0664  y=-0.1748[0m
+[0;32mI (954) EQ_OFFLINE: n=  70  x=-0.0625  low=-0.0624  mid=-0.0625  high=-0.0660  y=-0.1909[0m
+[0;32mI (964) EQ_OFFLINE: n=  71  x=-0.0046  low=-0.0042  mid=-0.0046  high=-0.0014  y=-0.0102[0m
+[0;32mI (974) EQ_OFFLINE: n=  72  x=-0.0512  low=-0.0506  mid=-0.0512  high=-0.0482  y=-0.1500[0m
+[0;32mI (984) EQ_OFFLINE: n=  73  x=+0.0024  low=+0.0032  mid=+0.0024  high=+0.0009  y=+0.0066[0m
+[0;32mI (994) EQ_OFFLINE: n=  74  x=+0.0202  low=+0.0209  mid=+0.0202  high=+0.0113  y=+0.0524[0m
+[0;32mI (1004) EQ_OFFLINE: n=  75  x=-0.0091  low=-0.0084  mid=-0.0091  high=-0.0109  y=-0.0285[0m
+[0;32mI (1014) EQ_OFFLINE: n=  76  x=+0.0264  low=+0.0270  mid=+0.0264  high=+0.0314  y=+0.0849[0m
+[0;32mI (1014) EQ_OFFLINE: n=  77  x=+0.0310  low=+0.0313  mid=+0.0310  high=+0.0311  y=+0.0934[0m
+[0;32mI (1024) EQ_OFFLINE: n=  78  x=-0.0078  low=-0.0075  mid=-0.0078  high=-0.0084  y=-0.0236[0m
+[0;32mI (1034) EQ_OFFLINE: n=  79  x=-0.0327  low=-0.0323  mid=-0.0327  high=-0.0277  y=-0.0926[0m
+[0;32mI (1044) EQ_OFFLINE: n=  80  x=+0.0339  low=+0.0343  mid=+0.0339  high=+0.0331  y=+0.1013[0m
+[0;32mI (1054) EQ_OFFLINE: n=  81  x=+0.0830  low=+0.0829  mid=+0.0830  high=+0.0692  y=+0.2352[0m
+[0;32mI (1064) EQ_OFFLINE: n=  82  x=+0.0131  low=+0.0127  mid=+0.0131  high=+0.0094  y=+0.0352[0m
+[0;32mI (1074) EQ_OFFLINE: n=  83  x=-0.0277  low=-0.0281  mid=-0.0277  high=-0.0101  y=-0.0659[0m
+[0;32mI (1084) EQ_OFFLINE: n=  84  x=+0.0241  low=+0.0238  mid=+0.0241  high=+0.0337  y=+0.0816[0m
+[0;32mI (1084) EQ_OFFLINE: n=  85  x=-0.0025  low=-0.0029  mid=-0.0025  high=-0.0130  y=-0.0184[0m
+[0;32mI (1094) EQ_OFFLINE: n=  86  x=-0.0529  low=-0.0531  mid=-0.0529  high=-0.0579  y=-0.1638[0m
+[0;32mI (1104) EQ_OFFLINE: n=  87  x=-0.0017  low=-0.0017  mid=-0.0017  high=+0.0035  y=+0.0000[0m
+[0;32mI (1114) EQ_OFFLINE: n=  88  x=+0.0371  low=+0.0370  mid=+0.0371  high=+0.0354  y=+0.1096[0m
+[0;32mI (1124) EQ_OFFLINE: n=  89  x=+0.0226  low=+0.0223  mid=+0.0226  high=+0.0161  y=+0.0610[0m
+[0;32mI (1134) EQ_OFFLINE: n=  90  x=-0.0263  low=-0.0266  mid=-0.0263  high=-0.0226  y=-0.0755[0m
+[0;32mI (1144) EQ_OFFLINE: n=  91  x=-0.0143  low=-0.0145  mid=-0.0143  high=-0.0048  y=-0.0337[0m
+[0;32mI (1154) EQ_OFFLINE: n=  92  x=+0.0445  low=+0.0442  mid=+0.0445  high=+0.0401  y=+0.1288[0m
+[0;32mI (1164) EQ_OFFLINE: n=  93  x=-0.0120  low=-0.0124  mid=-0.0120  high=-0.0210  y=-0.0454[0m
+[0;32mI (1164) EQ_OFFLINE: n=  94  x=-0.0490  low=-0.0492  mid=-0.0490  high=-0.0419  y=-0.1401[0m
+[0;32mI (1174) EQ_OFFLINE: n=  95  x=+0.0275  low=+0.0274  mid=+0.0275  high=+0.0337  y=+0.0887[0m
+[0;32mI (1184) EQ_OFFLINE: n=  96  x=+0.0026  low=+0.0024  mid=+0.0026  high=-0.0041  y=+0.0009[0m
+[0;32mI (1194) EQ_OFFLINE: n=  97  x=-0.0754  low=-0.0753  mid=-0.0754  high=-0.0742  y=-0.2249[0m
+[0;32mI (1204) EQ_OFFLINE: n=  98  x=-0.0054  low=-0.0050  mid=-0.0054  high=+0.0007  y=-0.0096[0m
+[0;32mI (1214) EQ_OFFLINE: n=  99  x=+0.0534  low=+0.0537  mid=+0.0534  high=+0.0443  y=+0.1514[0m
+[0;32mI (1294) EQ_OFFLINE: 3-band EQ processing finished[0m
+[0;32mI (1294) main_task: Returned from app_main()[0m

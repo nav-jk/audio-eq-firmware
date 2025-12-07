@@ -1,0 +1,22 @@
+# ESP-IDF build
+esp32/build/
+esp32/**/build/
+esp32/.vscode/
+esp32/.idea/
+
+# Python venv
+python/venv/
+venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Audio artifacts (optional, if you don't want big binaries in git)
+audio/output/*.wav
+filtered_raw.txt
+
+# OS junk
+.DS_Store
+Thumbs.db
