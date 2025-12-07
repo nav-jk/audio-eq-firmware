@@ -1,7 +1,5 @@
-```markdown
 # audio-eq-firmware
 
-## Introduction
 `audio-eq-firmware` is a firmware project designed to run a **real-time audio equalizer** on the **ESP32** platform. It provides low, mid, and high-band audio processing with configurable gain curves and **DSP-grade filter design** suitable for embedded audio applications.
 
 ---
@@ -39,7 +37,7 @@
 ├── LICENSE     \# MIT license
 └── README.md   \# Project documentation
 
-````
+```
 
 ---
 
