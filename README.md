@@ -12,7 +12,6 @@
 - [Building / Installation](#building--installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
 - [License](#license)
 
 ---
