@@ -81,9 +81,6 @@ Connect the ESP32 to your audio input/output chain and reboot the device to appl
 
 ---
 
-
----
-
 ## License
 This project is distributed under the **MIT License**. See `LICENSE` for details.
 ````
