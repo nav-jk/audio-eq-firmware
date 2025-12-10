@@ -4,17 +4,6 @@
 
 ---
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Repository Structure](#repository-structure)
-- [Dependencies](#dependencies)
-- [Building / Installation](#building--installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [License](#license)
-
----
 
 ## Features
 * **Real-time audio equalization** on ESP32 hardware.
@@ -29,7 +18,6 @@
 ```
 
 /
-├── .vscode/    \# VSCode workspace settings
 ├── build/      \# Build scripts / output directory
 ├── esp32/      \# ESP32 firmware source (C, ASM, linker scripts)
 ├── python/     \# Python utility scripts (optional)
